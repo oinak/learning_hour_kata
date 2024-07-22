@@ -1,0 +1,11 @@
+# compose.yaml
+
+services:
+  app:
+    build: .
+    environment: {}
+    command: ['bin/rails', 's', '-b', '0.0.0.0']
+    volumes:
+      - '.:/usr/src/app'
+    ports:
+      - '3000:3000'
