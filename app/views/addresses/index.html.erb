@@ -1,0 +1,5 @@
+
+<br><%= link_to "Contact with no address error",   addresses_edit_path( contact_id: 0) %>
+<br><%= link_to "Contact with address",            addresses_edit_path( contact_id: 1) %>
+<br><%= link_to "Contact with bad JSON",           addresses_edit_path( contact_id: 2) %>
+<br><%= link_to "Contact with bad Faraday::Error", addresses_edit_path( contact_id: 3) %>

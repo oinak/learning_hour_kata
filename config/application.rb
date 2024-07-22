@@ -22,5 +22,8 @@ module LearningHour
     # in config/environments, which are processed later.
     #
     # config.time_zone = "Central Time (US & Canada)"
+    config.eager_load_paths << Rails.root.join('app', 'services')
+    require 'api'
+    config.api = Api.new
   end
 end
