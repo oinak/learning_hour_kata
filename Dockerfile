@@ -1,5 +1,5 @@
 # Dockerfile
-FROM ruby:3.3
+FROM ruby:3.3.3
 
 # install necessary packages and jemalloc
 RUN apt-get update && \
